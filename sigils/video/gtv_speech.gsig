@@ -1,0 +1,21 @@
+{
+  "version": "\u03a6-111",
+  "modality": "video",
+  "video": {
+    "latent_keys": [
+      "path:gtv_speech",
+      "frames:30192"
+    ],
+    "source": "/data/data/com.termux/files/home/gtv_speech/index.json"
+  },
+  "root": {
+    "visible": "f625859a",
+    "invisible": "e89eda2b",
+    "collapsed": "f625859a|e89eda2b"
+  },
+  "invariants": {
+    "arity": 5,
+    "glyph_count": 111,
+    "dual_channel": true
+  }
+}

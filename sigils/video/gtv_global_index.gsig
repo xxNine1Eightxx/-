@@ -1,0 +1,21 @@
+{
+  "version": "\u03a6-111",
+  "modality": "video",
+  "video": {
+    "latent_keys": [
+      "path:gtv_global_index",
+      "frames:3"
+    ],
+    "source": "/data/data/com.termux/files/home/gtv_global_index/index.json"
+  },
+  "root": {
+    "visible": "4acac8e4",
+    "invisible": "764dfcf3",
+    "collapsed": "4acac8e4|764dfcf3"
+  },
+  "invariants": {
+    "arity": 5,
+    "glyph_count": 111,
+    "dual_channel": true
+  }
+}

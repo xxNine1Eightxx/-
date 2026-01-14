@@ -1,0 +1,21 @@
+{
+  "version": "\u03a6-111",
+  "modality": "video",
+  "video": {
+    "latent_keys": [
+      "path:internet_delta_0001_frames",
+      "frames:3"
+    ],
+    "source": "/data/data/com.termux/files/home/gtv_updates/internet_delta_0001_frames/index.json"
+  },
+  "root": {
+    "visible": "4f35272b",
+    "invisible": "a7880591",
+    "collapsed": "4f35272b|a7880591"
+  },
+  "invariants": {
+    "arity": 5,
+    "glyph_count": 111,
+    "dual_channel": true
+  }
+}

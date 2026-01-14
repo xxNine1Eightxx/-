@@ -1,0 +1,21 @@
+{
+  "version": "\u03a6-111",
+  "modality": "video",
+  "video": {
+    "latent_keys": [
+      "path:gtv_self_training",
+      "frames:5"
+    ],
+    "source": "/data/data/com.termux/files/home/gtv_self_training/index.json"
+  },
+  "root": {
+    "visible": "59510667",
+    "invisible": "f6c670f4",
+    "collapsed": "59510667|f6c670f4"
+  },
+  "invariants": {
+    "arity": 5,
+    "glyph_count": 111,
+    "dual_channel": true
+  }
+}

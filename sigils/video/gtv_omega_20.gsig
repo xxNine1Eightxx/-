@@ -1,0 +1,21 @@
+{
+  "version": "\u03a6-111",
+  "modality": "video",
+  "video": {
+    "latent_keys": [
+      "path:gtv_omega_20",
+      "frames:20"
+    ],
+    "source": "/data/data/com.termux/files/home/gtv_omega_20/index.json"
+  },
+  "root": {
+    "visible": "29993c4e",
+    "invisible": "c4b09ec0",
+    "collapsed": "29993c4e|c4b09ec0"
+  },
+  "invariants": {
+    "arity": 5,
+    "glyph_count": 111,
+    "dual_channel": true
+  }
+}
