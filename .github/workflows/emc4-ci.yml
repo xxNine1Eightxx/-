@@ -1,0 +1,38 @@
+name: EMC⁴ SigilAGI CI
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (TypeScript)
+        run: npm run build
+
+      - name: Invariant Check (Φ-111)
+        run: |
+          node run.mjs
+          test -f output.gsig
+
+      - name: Upload GSig Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: emc4-gsig
+          path: output.gsig
