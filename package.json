@@ -1,0 +1,35 @@
+{
+  "name": "hypercube-emc",
+  "version": "0.1.0",
+  "description": "Executable Model Container (EMC) via 4D→3D→2D hypercube projection with deterministic entropy side-channel encoding",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "hypercube-emc": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "canon"
+  ],
+  "scripts": {
+    "gen:canon": "node tools/gen_canon.mjs",
+    "prebuild": "node tools/gen_canon.mjs",
+    "build": "./node_modules/.bin/tsc -p tsconfig.json",
+    "test": "node --test dist/test/*.test.js",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
